@@ -1,3 +1,4 @@
+x · HTML
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,8 +9,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=JetBrains+Mono:wght@400;500;700;800&display=swap" rel="stylesheet">
 <style>
-
-
+ 
+ 
   :root{
     --bg:#0b0e14;
     --bg-raised:#12161f;
@@ -26,11 +27,11 @@
     --legendary:#ffb454;
     --locked:#3a4152;
   }
-
+ 
   *{box-sizing:border-box; margin:0; padding:0;}
-
+ 
   html{scroll-behavior:smooth;}
-
+ 
   body{
     background:
       radial-gradient(ellipse 800px 500px at 15% -10%, rgba(107,226,214,0.07), transparent),
@@ -41,9 +42,9 @@
     line-height:1.6;
     min-height:100vh;
   }
-
+ 
   .pixel{font-family:'Press Start 2P', monospace;}
-
+ 
   
   body::before{
     content:"";
@@ -55,11 +56,11 @@
     );
     z-index:1;
   }
-
+ 
   a{color:inherit; text-decoration:none;}
-
+ 
   ::selection{background:var(--cyan); color:#0b0e14;}
-
+ 
   /*nav*/
   nav{
     position:sticky; top:0; z-index:50;
@@ -84,7 +85,7 @@
   .nav-links a:hover{color:var(--cyan);}
   .nav-links{display:none;}
   @media(min-width:640px){ .nav-links{display:flex;} }
-
+ 
   /*BOOT SCREEN*/
   .hero{
     max-width:920px; margin:0 auto;
@@ -98,7 +99,7 @@
   }
   .boot-line .ok{color:var(--cyan);}
   @keyframes appear{ to{opacity:1;} }
-
+ 
   .hero h1{
     font-size:clamp(28px, 6vw, 52px);
     line-height:1.25;
@@ -133,7 +134,7 @@
     height:100%;
     background:linear-gradient(90deg, var(--cyan), var(--green));
   }
-
+ 
   /*section shell*/
   section{max-width:920px; margin:0 auto; padding:60px 24px; position:relative; z-index:2;}
   .eyebrow{
@@ -144,7 +145,7 @@
   }
   .eyebrow::after{content:""; flex:1; height:1px; background:var(--line);}
   h2{font-size:22px; margin-bottom:24px; letter-spacing:0.3px;}
-
+ 
   /*spec panel*/
   .spec-panel{
     background:var(--bg-card);
@@ -161,12 +162,12 @@
   .spec-row:last-child{border-bottom:none;}
   .spec-row .k{color:var(--muted);}
   .spec-row .v{color:var(--text);}
-
+ 
   /* PROJECTS (component list)*/
   .filter-row{display:none;}
-
+ 
   .project-grid{display:grid; gap:16px;}
-
+ 
   .card{
     background:var(--bg-card);
     border:1px solid var(--line);
@@ -188,7 +189,7 @@
   .card-links{display:flex; gap:16px; font-size:12px;}
   .card-links a{color:var(--cyan); border-bottom:1px dashed transparent;}
   .card-links a:hover{border-bottom-color:var(--cyan);}
-
+ 
   .dropdown-toggle{
     display:flex; align-items:center; gap:6px;
     font-family:'JetBrains Mono', monospace;
@@ -211,7 +212,7 @@
   .subitem:not(:last-child){border-bottom:1px solid var(--line);}
   .subitem-title{font-size:13px; font-weight:700; margin-bottom:4px;}
   .subitem-desc{font-size:12px; color:var(--muted);}
-
+ 
   .subitem-images{
     display:flex; flex-wrap:wrap; gap:8px;
     margin-top:10px;
@@ -223,7 +224,7 @@
     display:block;
   }
   .subitem-images img:hover{border-color:var(--cyan); transform:scale(1.03);}
-
+ 
   .subitem-files{
     display:flex; flex-direction:column; gap:4px;
     margin-top:10px;
@@ -234,7 +235,7 @@
     width:fit-content;
   }
   .subitem-files a:hover{text-decoration:underline;}
-
+ 
   .lightbox{
     display:none;
     position:fixed; inset:0; z-index:100;
@@ -257,7 +258,7 @@
     font-size:22px; color:var(--text);
     background:none; border:none; cursor:pointer;
   }
-
+ 
   .card.locked{
     display:flex; align-items:center; justify-content:center;
     min-height:80px;
@@ -265,7 +266,7 @@
     color:var(--locked);
     font-size:12px; text-align:center;
   }
-
+ 
   /*skills */
   .skills-grid{display:grid; grid-template-columns:repeat(auto-fill, minmax(220px,1fr)); gap:16px;}
   .skill-group{
@@ -286,7 +287,7 @@
   .skill-group li::before{
     content:"▸"; position:absolute; left:0; color:var(--cyan);
   }
-
+ 
   /*BUILD LOG (timeline) */
   .log-item{
     display:flex; gap:16px;
@@ -299,7 +300,7 @@
   }
   .log-text{font-size:13px;}
   .log-text b{color:var(--cyan);}
-
+ 
   /*contact*/
   footer{
     max-width:920px; margin:0 auto;
@@ -316,14 +317,14 @@
   }
   .contact-links a:hover{border-color:var(--cyan); color:var(--cyan);}
   .foot-note{margin-top:40px; font-size:10px; color:var(--locked);}
-
+ 
   @media (prefers-reduced-motion: reduce){
     *{animation-duration:0.01ms !important; transition-duration:0.01ms !important;}
   }
 </style>
 </head>
 <body>
-
+ 
 <nav>
   <div class="nav-brand">
     <span class="nav-led"></span>
@@ -337,30 +338,30 @@
     <a href="#contact">contact</a>
   </div>
 </nav>
-
+ 
 <div class="hero">
   <div id="boot"></div>
-
+ 
   <h1><span class="accent">Borna Chadegani</span><br>Computer Engineering Student</h1>
   <p class="sub">I'm building my way from breadboards to bigger systems — embedded electronics, digital logic, and full-stack development. I care about understanding things at the level below the abstraction, not just using them.</p>
-
+ 
   <div class="hero-tags">
     <span class="tag">Computer Engineering — Yr 2</span>
     <span class="tag">Arduino / Embedded</span>
     <span class="tag">Web Dev</span>
     <span class="tag">PC Building</span>
   </div>
-
+ 
   <div class="stat-bar-wrap">
     <span style="width:90px;">XP TO LVL 3</span>
     <div class="stat-bar"><div class="stat-fill" style="width:42%;"></div></div>
     <span>42%</span>
   </div>
 </div>
-
+ 
 <section id="about">
   <div class="eyebrow">system info</div>
-
+  <h2>About</h2>
   <div class="spec-panel">
     <div class="spec-row"><span class="k">Program</span><span class="v">Computer Engineering — Year 2</span></div>
     <div class="spec-row"><span class="k">Location</span><span class="v">University of Ottawa</span></div>
@@ -369,26 +370,26 @@
     <div class="spec-row"><span class="k">Interests</span><span class="v">Embedded systems, PC hardware, and game design</span></div>
   </div>
 </section>
-
-<section id="projects">
-  <div class="eyebrow">Achievements And Builds</div>
  
-
+<section id="projects">
+  <div class="eyebrow">Personal Specs</div>
+ 
+ 
   <div class="project-grid" id="projectGrid"></div>
 </section>
-
+ 
 <section id="skills">
-  <div class="eyebrow">Personal Specs</div>
+  <div class="eyebrow">skills</div>
  
   <div class="skills-grid" id="skillsGrid"></div>
 </section>
-
+ 
 <section id="log">
   <div class="eyebrow">changelog</div>
   <h2>Build Log</h2>
   <div id="logList"></div>
 </section>
-
+ 
 <footer id="contact">
   <h2>Let's talk</h2>
   <p>Open to part-time roles, internships, and collaborative projects.</p>
@@ -399,15 +400,15 @@
   </div>
   <div class="foot-note">// last compiled 2026 — edit the PROJECT DATA block in this file to add new builds</div>
 </footer>
-
+ 
 <div class="lightbox" id="lightbox">
   <button class="lightbox-close" id="lightboxClose">✕</button>
   <img id="lightboxImg" src="" alt="">
   <div class="lightbox-caption" id="lightboxCaption"></div>
 </div>
-
+ 
 <script>
-
+ 
 const PROJECTS = [
   {
     title: "Arduino Stream Deck",
@@ -417,22 +418,52 @@ const PROJECTS = [
   },
   {
     title: "Digital Logic Design — Coursework Projects",
-    desc: "A series of circuit design projects for Digital Systems, covering number systems, Boolean algebra, combinational logic, and sequential logic. Individual pieces below.",
-    stack: ["Boolean Algebra", "K-Maps", "Combinational Logic", "Sequential Logic", "Registers & Counters"],
+    desc: "A series of lab projects for Digital Systems I (ITI 1100), covering logic gates, Boolean simplification, arithmetic circuits, combinational circuits, latches/flip-flops, and synchronous counters — designed and simulated in Intel Quartus and verified on the Altera DE2-115 board.",
+    stack: ["Quartus Prime", "Altera DE2-115", "Boolean Algebra", "Sequential Logic"],
     links: [],
-    
     subItems: [
-      { title:"Number Systems & Binary Arithmetic", desc:"Base conversions, complements, signed binary numbers, and binary arithmetic.", images:[], files:[] },
-      { title:"Boolean Algebra & Gate-Level Minimization", desc:"Boolean function simplification using K-maps, NAND/NOR implementation, and don't-care conditions.", images:[], files:[] },
-      { title:"Combinational Circuit Design", desc:"Design and analysis of adders/subtractors, magnitude comparators, decoders, encoders, and multiplexers.", images:[], files:[] },
-      { title:"Synchronous Sequential Circuits", desc:"Latches, flip-flops, and analysis/design of clocked sequential circuits.", images:[], files:[] },
-      { title:"Registers & Counters", desc:"Shift registers, ripple counters, and synchronous counter design.", images:[], files:[] },
+      {
+        title:"Lab 1: Logic Gates",
+        desc:"Built and simulated basic and combinational logic circuits in Quartus, then derived truth tables to identify equivalent standard gate configurations (e.g. a NAND-based circuit shown to be equivalent to a 3-input OR gate, another to a 4-input NAND gate).",
+        images:[],
+        files:[ { label:"Lab Report (PDF)", url:"assets/ITI1100_-_Lab1_-_FormalReport.pdf" } ]
+      },
+      {
+        title:"Lab 2: Boolean Logic",
+        desc:"Simplified a multi-variable Boolean expression using Boolean algebra identities, implemented both the original and minimized circuits in Quartus, and verified the reduction in complexity through simulation and hardware testing on the DE2-115 board.",
+        images:[],
+        files:[ { label:"Lab Report (PDF)", url:"assets/ITI1100-_Lab_2__Boolean_Logic.pdf" } ]
+      },
+      {
+        title:"Lab 3: Arithmetic Circuits",
+        desc:"Designed a 1-bit full adder and expanded it into an 8-bit ripple-carry adder, then modified it into a two's complement adder/subtractor with overflow detection, and built a 4-bit multiplier using partial product generation.",
+        images:[],
+        files:[ { label:"Lab Report (PDF)", url:"assets/ITI1100-_Lab_3__Arithmetic_Circuits.pdf" } ]
+      },
+      {
+        title:"Lab 4: Combinational Circuits",
+        desc:"Built 1-bit and 2-bit magnitude comparators, a 2-to-4 decoder, and a 4-to-1 multiplexer, verifying correct operation through simulation waveforms and hardware testing.",
+        images:[],
+        files:[ { label:"Lab Report (PDF)", url:"assets/ITI1100-_Lab_4__Combinational_Circuits.pdf" } ]
+      },
+      {
+        title:"Lab 5: Latches and Flip-Flops",
+        desc:"Built an SR latch, D latch, D flip-flop, and T flip-flop from NAND/NOR gates, demonstrating the transition from level-sensitive storage to edge-triggered synchronization.",
+        images:[],
+        files:[ { label:"Lab Report (PDF)", url:"assets/Lab_5__Latches_and_Flip_-_Flops.pdf" } ]
+      },
+      {
+        title:"Lab 6: Synchronous Counters",
+        desc:"Designed a 4-bit synchronous counter using JK flip-flops from a given count sequence — derived the state table, applied the JK excitation table, simplified the equations with K-maps, and verified the design on the DE2-115 board.",
+        images:[],
+        files:[ { label:"Lab Report (PDF)", url:"assets/ITI1100-_Lab_6__Synchronous_Counters.pdf" } ]
+      },
     ]
   },
   { locked:true, title:"More projects coming soon" },
 ];
-
-
+ 
+ 
 const SKILLS = [
   {
     category: "Programming",
@@ -455,13 +486,13 @@ const SKILLS = [
     items: ["HTML / CSS / JavaScript"]
   },
 ];
-
+ 
 const LOG = [
   { date:"2026", text:"Built this portfolio site to track projects going forward." },
   { date:"2025", text:"Completed <b>Digital Systems</b> — logic design, K-maps, sequential circuits, and SOP/NAND implementation." },
   { date:"2025", text:"Shipped the <b>Arduino Stream Deck</b> — first hardware and software project built end to end." },
 ];
-
+ 
 function renderProjects(){
   const grid = document.getElementById('projectGrid');
   grid.innerHTML = '';
@@ -473,10 +504,10 @@ function renderProjects(){
       grid.appendChild(el);
       return;
     }
-
+ 
     const el = document.createElement('div');
     el.className = 'card';
-
+ 
     const subItemsHTML = (p.subItems && p.subItems.length)
       ? `
         <button class="dropdown-toggle" type="button">
@@ -502,7 +533,7 @@ function renderProjects(){
           `).join('')}
         </div>
       ` : '';
-
+ 
     el.innerHTML = `
       <div class="card-top">
         <div class="card-title">${p.title}</div>
@@ -512,7 +543,7 @@ function renderProjects(){
       <div class="card-links">${p.links.map(l=>`<a href="${l.url}" target="_blank" rel="noopener">${l.label} →</a>`).join('')}</div>
       ${subItemsHTML}
     `;
-
+ 
     const toggle = el.querySelector('.dropdown-toggle');
     if(toggle){
       toggle.addEventListener('click', ()=>{
@@ -524,11 +555,11 @@ function renderProjects(){
           : `View breakdown (${p.subItems.length})`;
       });
     }
-
+ 
     grid.appendChild(el);
   });
 }
-
+ 
 function renderSkills(){
   const grid = document.getElementById('skillsGrid');
   grid.innerHTML = '';
@@ -542,15 +573,15 @@ function renderSkills(){
     grid.appendChild(el);
   });
 }
-
+ 
 renderProjects();
 renderSkills();
-
-
+ 
+ 
 const lightbox = document.getElementById('lightbox');
 const lightboxImg = document.getElementById('lightboxImg');
 const lightboxCaption = document.getElementById('lightboxCaption');
-
+ 
 document.getElementById('projectGrid').addEventListener('click', e=>{
   if(e.target.tagName === 'IMG' && e.target.closest('.subitem-images')){
     lightboxImg.src = e.target.src;
@@ -560,7 +591,7 @@ document.getElementById('projectGrid').addEventListener('click', e=>{
 });
 document.getElementById('lightboxClose').addEventListener('click', ()=> lightbox.classList.remove('open'));
 lightbox.addEventListener('click', e=>{ if(e.target === lightbox) lightbox.classList.remove('open'); });
-
+ 
 const logList = document.getElementById('logList');
 LOG.forEach(item=>{
   const el = document.createElement('div');
@@ -568,8 +599,8 @@ LOG.forEach(item=>{
   el.innerHTML = `<div class="log-date">${item.date}</div><div class="log-text">${item.text}</div>`;
   logList.appendChild(el);
 });
-
-
+ 
+ 
 const bootLines = [
   "> initializing profile...",
   "> loading engineering.core... [OK]",
@@ -591,6 +622,7 @@ bootLines.forEach((line, i)=>{
   bootEl.appendChild(d);
 });
 </script>
-
+ 
 </body>
 </html>
+ 
